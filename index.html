@@ -7,10 +7,13 @@
 
 </head>
 <body>
-	<audio id="background-audio" autoplay loop>
-        <source src="your-audio-file.mp3" type="audio/mpeg">
-        <!-- Add other formats as needed -->
+	<audio id="song">
+		<source src="D:\editzs\Rishikesh">
 	</audio>
+	<script>
+		window.addEventListener('click', () => {
+			document.getElementById("song").play();
+		});
 <!-- partial:index.partial.html -->
 <body>
 <!-- partial:index.partial.html -->
@@ -141,16 +144,6 @@
 
 </body>
 <!-- partial -->
-	<script  src="./script.js"></script>
-	<script>
-        // JavaScript to enable autoplay in case user interacts with the page
-        document.addEventListener("click", () => {
-            const audio = document.getElementById("background-audio");
-            if (audio.paused) {
-                audio.play();
-            }
-        });
-    </script>
-
+	
 </body>
 </html>
